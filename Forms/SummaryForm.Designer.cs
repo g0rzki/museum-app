@@ -45,7 +45,7 @@ namespace museum_app.Forms
             // 
             lblExhibitionTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
             lblExhibitionTitle.ForeColor = Color.DimGray;
-            lblExhibitionTitle.Location = new Point(347, 80);
+            lblExhibitionTitle.Location = new Point(347, 89);
             lblExhibitionTitle.Name = "lblExhibitionTitle";
             lblExhibitionTitle.Size = new Size(105, 30);
             lblExhibitionTitle.TabIndex = 1;
@@ -108,7 +108,7 @@ namespace museum_app.Forms
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label1.ForeColor = Color.DimGray;
-            label1.Location = new Point(151, 80);
+            label1.Location = new Point(151, 91);
             label1.Name = "label1";
             label1.Size = new Size(190, 28);
             label1.TabIndex = 6;

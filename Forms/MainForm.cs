@@ -68,13 +68,16 @@ namespace museum_app
             // Przejœcie do formularza wyboru biletów
             using (var ticketForm = new TicketSelectionForm(_context, selectedExhibition)) { 
                 this.Hide();
-                if (ticketForm.ShowDialog() == DialogResult.Cancel)
+                var result = ticketForm.ShowDialog();
+
+
+                if (result == DialogResult.Cancel)
                 {
-                    this.Show();
+                    this.Show(); // Powrót do g³ównego formularza
                 }
                 else
                 {
-                    this.Close();
+                    this.Close(); // Zakoñczenie aplikacji po zakoñczeniu procesu
                 }
             }
         }

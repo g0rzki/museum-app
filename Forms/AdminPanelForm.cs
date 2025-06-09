@@ -90,8 +90,9 @@ namespace museum_app.Forms
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            // Zamknięcie panelu admina
-            this.Close();
+            // Restart aplikacji
+            System.Diagnostics.Process.Start(Application.ExecutablePath);
+            Application.Exit(); // Zamknięcie bieżącej instancji
         }
     }
 }

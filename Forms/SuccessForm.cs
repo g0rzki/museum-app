@@ -10,8 +10,8 @@
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK; // Ustawienie wyniku dialogu na OK
-            this.Close();
+            // Zakończenie pracy aplikacji
+            Application.Exit();
         }
     }
 }

@@ -73,7 +73,15 @@ namespace museum_app.Forms
             var summaryForm = new SummaryForm(_context, _selectedExhibition, normalCount, discountedCount, familyCount);
             if (summaryForm.ShowDialog() == DialogResult.Cancel)
             {
-                this.Show();
+                // Powrót do wyboru biletów, jeśli użytkownik anulował
+                this.DialogResult = DialogResult.Cancel;
+                this.Close(); // Powrót do mainForm
+            }
+            else
+            {
+                // Kontynuacja procesu, jeśli użytkownik potwierdził zamówienie
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
         }
 

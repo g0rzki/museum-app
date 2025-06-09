@@ -121,9 +121,10 @@ namespace museum_app.Forms
             _context.SaveChanges();
 
             // Ukrycie formularza i wyświetlenie komunikatu o sukcesie
-            this.Hide();
             var successForm = new SuccessForm();
+            this.Hide();
             successForm.ShowDialog();
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
